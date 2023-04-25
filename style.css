@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "epilogue", sans-serif;
+    background-color: var(--Almost-White);
+}
+
+body {
+    max-width: 1440px;
+    min-width: 390px;
+    background-color: var(--Almost-White);
+}
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+p {
+    font-size: 16px;
+}
+
+.navbar-toggler:focus,
+.accordion-item,
+.accordion-button:focus,
+.btn-close:focus,
+.navbar-toggler,
+.accordion-button:not(.collapsed),
+.accordion-button,
+.dropdown-menu {
+    box-shadow: none;
+    border: none;
+    background-color: var(--Almost-White);
+}
+
+.btn {
+    border-radius: 15px;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.btn-dark:hover,.btn-light:hover{
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black) !important;
+}
+
+.nav-item:hover,
+.nav-link:hover {
+    color: var(--Almost-Black) !important;
+    color: black !important;
+}
+
+.dropdown-menu * {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+    box-shadow: none;
+}

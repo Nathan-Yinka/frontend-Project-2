@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>March | css | Bootstrap</title>
+  <!-- Bootstrap css cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap icon cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container-fluid-lg">
+  <!-- --------nav bar---------- -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand me-4" href="#">
+        <img src="./images/logo.svg" alt="">
+      </a>
+      <button class="navbar-toggler btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Features
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div>
+                <a class="nav-link d-grid " href="">
+                  <div class="row align-items-center">
+                    <span class="col-3"><img src="./images/icon-todo.svg" alt=""></span>
+                    <span class="col-2 text-muted">TodoList</span>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link d-grid align-items-start text-muted" href="">
+                  <div class="row">
+                    <span class="col-3"><img src="./images/icon-calendar.svg" alt=""></span>
+                    <span class="col-2 text-muted">Calendar</span>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link d-grid align-items-start" href="">
+                  <div class="row">
+                    <span class="col-3"><img src="./images/icon-reminders.svg" alt=""></span>
+                    <span class="col-2 text-muted">Reminder</span>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link d-grid align-items-start" href="">
+                  <div class="row">
+                    <span class="col-3"><img src="./images/icon-planning.svg" alt=""></span>
+                    <span class="col-2 text-muted">Planning</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Company
+            </a>
+            <div class="dropdown-menu text-muted" aria-labelledby="navbarDropdown">
+              <div>
+                <a class="nav-link d-grid justify-content-start align-items-start" href="">
+                  <div class="row">
+                    <span class="col-1"><img src="" alt=""></span>
+                    <span class="col-1 text-muted">History</span>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link d-grid justify-content-start align-items-start" href="">
+                  <div class="row">
+                    <span class="col-1"><img src="" alt=""></span>
+                    <span class="col text-muted">Our Team</span>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link d-grid justify-content-start align-items-start" href="">
+                  <div class="row">
+                    <span class="col-1"><img src="" alt=""></span>
+                    <span class="col-1 text-muted">Blog</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" aria-current="page" href="#">Careers</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link " href="#">About</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="" class="nav-link text-muted text-center">Login</a>
+          <a href="" class="nav-link btn btn-light text-muted border-dark border-radius-5 round">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- -----------------------------section------------------------------------------ -->
+  <section
+    class="container-fluid container-md d-md-flex flex-row-reverse justify-content-between col-md-10  align-items-md-center mt-2 mt-md-5">
+    <div class="hero-image col-md-5">
+      <div><img src="./images/image-hero-mobile.png" class="img-fluid d-md-none" alt="Hero-image">
+      </div>
+      <div class=""><img src="./images/image-hero-desktop.png" class="img-fluid d-none d-md-block" alt="Hero-image">
+      </div>
+    </div>
+
+    <div class="row hero-content mt-5 justify-content-start text-center  text-md-start col-md-5 align-self-end">
+      <div class="display-3 d-md-none fw-bold p-md-0">Make remote work</div>
+      <div class="display-2 d-md-block d-none fw-bold p-md-0">Make</div>
+      <div class="display-2 d-md-block d-none fw-bold p-md-0 mt-0"> remote work</div>
+      <div class="row justify-content-center justify-content-md-start">
+        <p class="col-12 text-center text-md-start ps-md-0 text-muted my-3">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+      </div>
+      <div class="row col-12 justify-content-center justify-content-md-start my-md-5">
+        <button class="btn btn-dark btn-lg col-5 fw-bold py-2 mb-md-3">Learn more</button>
+      </div>
+
+      <div class=" justify-content-between align-items-end my-4 my-md-0 row col-12">
+        <div class="col-3"><img src="./images/client-databiz.svg" alt="" class="img-fluid"></div>
+        <div class="col-3"><img src="./images/client-audiophile.svg" alt="" class="img-fluid"></div>
+        <div class="col-3"><img src="./images/client-meet.svg" alt="" class="img-fluid"></div>
+        <div class="col-3"><img src="./images/client-maker.svg" alt="" class="img-fluid"></div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <!-- ----------------------------------------off canvas---------------------------------- -->
+  <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel"></h5>
+      <button type="button" class="btn-close btn-lg text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body text-muted">
+      <div class="accordion text-dark" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button text-muted" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Features
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne">
+            <div class="accordion-body">
+              <div class="nav-item">
+                <div>
+                  <a class="nav-link d-grid  align-items-start" href="">
+                    <div class="row">
+                      <span class="col-2"><img src="./images/icon-todo.svg" alt=""></span>
+                      <span class="col-2 text-muted">TodoList</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="nav-link d-grid align-items-start text-muted" href="">
+                    <div class="row">
+                      <span class="col-2"><img src="./images/icon-calendar.svg" alt=""></span>
+                      <span class="col-2 text-muted">Calendar</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="nav-link d-grid align-items-start" href="">
+                    <div class="row">
+                      <span class="col-2"><img src="./images/icon-reminders.svg" alt=""></span>
+                      <span class="col-2 text-muted">Reminder</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="nav-link d-grid align-items-start" href="">
+                    <div class="row">
+                      <span class="col-2"><img src="./images/icon-planning.svg" alt=""></span>
+                      <span class="col-2 text-muted">Planning</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed text-muted" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Company
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse text-muted" aria-labelledby="headingTwo">
+            <div class="accordion-body text-muted">
+              <div>
+                <a class="nav-link d-grid justify-content-start align-items-start" href="">
+                  <div class="row">
+                    <span class="col-1"><img src="" alt=""></span>
+                    <span class="col-1 text-muted">History</span>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link d-grid justify-content-start align-items-start" href="">
+                  <div class="row">
+                    <span class="col-1"><img src="" alt=""></span>
+                    <span class="col text-muted">Our Team</span>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="nav-link d-grid justify-content-start align-items-start" href="">
+                  <div class="row">
+                    <span class="col-1"><img src="" alt=""></span>
+                    <span class="col-1 text-muted">Blog</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item p-2 ">
+          <a href="" class="nav-link text-muted">Careers</a>
+        </div>
+        <div class="nav-item p-2">
+          <a href="" class="nav-link text-muted">About</a>
+        </div>
+        <div class="row justify-content-center">
+          <div class="nav-item p-2 col-4">
+            <a href="" class="nav-link text-muted text-center">Login</a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="nav-item p-2 col-11">
+            <a href="" class="nav-link btn btn-outline-dark text-muted border-radius-5 round">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution fixed-bottom bg-light border">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Oludare Nathaniel</a>.
+  </div>
+
+
+  <!-- Bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
